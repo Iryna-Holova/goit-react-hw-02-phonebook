@@ -11,7 +11,7 @@ const Filter = ({currentValue, onChange}) => (
                 onChange={event => {
                     onChange(event.target.value);
                 }}
-            ></FilterInput>
+            />
         </FilterLabel>
     </FilterContainer>
 );
