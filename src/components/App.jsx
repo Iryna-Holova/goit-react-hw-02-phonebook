@@ -11,8 +11,9 @@ class App extends Component {
     filter: '',
   }
 
-  onHandleSubmit = ({name, number}) => {
-    const isInContacts = this.state.contacts.find(contact => contact.name.toLowerCase() === name.toLowerCase());
+  onHandleSubmit = ({ name, number }) => {
+    const normalisedName = name.toLowerCase();
+    const isInContacts = this.state.contacts.find(contact => contact.name.toLowerCase() === normalisedName);
 
     if (isInContacts) {
       alert(`${name} is already in contacts`);
