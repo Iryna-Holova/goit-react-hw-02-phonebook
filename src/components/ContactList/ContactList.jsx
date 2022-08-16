@@ -6,7 +6,7 @@ const ContactList = ({ contacts, deleteContact }) => (
         <ContactItems
             contacts={contacts}
             deleteContact={deleteContact}
-        ></ContactItems>
+        />
     </ContactListContainer>
 );
 
